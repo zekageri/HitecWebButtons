@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HsH_Things</title>
+
+    <link rel="stylesheet" href="showCase.css">
+    <link rel="stylesheet" href="hshButton.css">
+    <link rel="stylesheet" href="hshModal.css">
+    <link rel="stylesheet" href="hshNumberInput.css">
+
+    <script defer src="jsUtils.js"></script>
+    <script defer src="script.js"></script>
+    
+    <script defer src="hshModal.js"></script>
+    <script defer src="hshNumberInput.js"></script>
+</head>
+
+<body>
+
+    <div class="showCaseAll">
+
+        <div class="showCase">
+            <h2 class="showCaseHeader">Buttons</h2>
+            <div class="buttonsDiv">
+                <button class="hshBtn success">
+                    Success
+                </button>
+                <button class="hshBtn error">
+                    Error
+                </button>
+                <button class="hshBtn info">
+                    Info
+                </button>
+                <button class="hshBtn warning">
+                    Warning
+                </button>
+                <button class="hshBtn close"> &#x2716; </button>
+            </div>
+        </div>
+
+        <div class="showCase">
+            <h2 class="showCaseHeader">Modal</h2>
+            <button class="hshBtn info modalOpener" data-modal="testModal">
+                Open Modal
+            </button>
+            <button class="hshBtn info modalOpener" data-modal="otherModal">
+                Open other modal
+            </button>
+        </div>
+
+        <div class="showCase">
+            <h2 class="showCaseHeader">Number Input</h2>
+            <div class="hshNumberWrapper">
+                <input type="number" value="0" id="testNumScroller" class="hshNumber">
+                <div class="hshNumberScroller" data-scroller="testNumScroller"></div>
+            </div>
+        </div>
+
+        <div class="showCase">
+            <h2 class="showCaseHeader">Select Input</h2>
+            <div class="hshSelectWrapper">
+                <select id="testSelect" class="hshSelect"></select>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hshModalWrapper" id="testModal">
+        <div class="hshModalInner">
+            <div class="hshModal-Header">
+                <div class="hshModal-Name">Test Modal</div>
+                <div class="hshModal-ButtonSection">
+                    <button class="hshBtn close modalCloser" data-modal="testModal"> &#x2716; </button>
+                </div>
+            </div>
+            <div class="hshModal-Body">
+                <p class="modalBodyExampleText">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eius esse pariatur necessitatibus dolor aspernatur in, libero at, saepe officia minima vero! Blanditiis, accusamus! Exercitationem consequuntur excepturi maiores dicta delectus?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hshModalWrapper" id="otherModal">
+        <div class="hshModalInner">
+            <div class="hshModal-Header">
+                <div class="hshModal-Name">Other Modal</div>
+                <div class="hshModal-ButtonSection">
+                    <button class="hshBtn close modalCloser" data-modal="otherModal"> &#x2716; </button>
+                </div>
+            </div>
+            <div class="hshModal-Body">
+                <p class="modalBodyExampleText">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, repellendus?
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

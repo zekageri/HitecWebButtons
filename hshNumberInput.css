@@ -1,0 +1,52 @@
+.hshNumberWrapper{
+    min-width: 50px;
+    max-width: 70px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+input.hshNumber {
+    max-width: 75%;
+    height: 100%;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: rgb(0 0 0 / 16%) 0px 0px 6px;
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+.hshNumberScroller {
+    width: 25%;
+    height: 100%;
+    border-radius: 20%;
+    box-shadow: rgb(0 0 0 / 16%) 0px 0px 6px;
+    cursor: grab;
+}
+
+.hshNumberScroller.scrolling{
+    cursor: grabbing;
+}
+
+input.hshNumber:focus-visible{
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.384) 0px 0px 8px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input.hshNumber::-webkit-outer-spin-button,
+input.hshNumber::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input.hshNumber[type=number] {
+  -moz-appearance: textfield;
+}
